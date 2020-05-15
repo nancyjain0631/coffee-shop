@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pangolin&family=Permanent+Marker&display=swap');
+
+/* declaring variables */
+:root {
+    --brightyellow: #e38505;
+    --darkbrown: #bb9457;
+    --yellow: rgb(242, 180, 80);
+    --brown: #382923;
+    --grey: #a9b2ac;
+    --black: #191919;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    background: url('../assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    color: var(--black);
+}
+
+/* global style */
+.pm-fonts {
+    font-family: 'Permanent Marker', cursive;
+}
