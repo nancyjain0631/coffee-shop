@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pangolin&family=Permanent+Marker&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
 /* declaring variables */
 :root {
     --brightyellow: #e38505;
@@ -20,14 +22,35 @@
 body {
     height: 100%;
     font-family: 'Noto Sans', sans-serif;
-    background: url('../assets/img/bg.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../assets/img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+
     color: var(--black);
 }
 
 /* global style */
-.pm-fonts {
-    font-family: 'Permanent Marker', cursive;
+.bella-fonts {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+/* end of global style */
+/* header */
+.header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        background: url('../assets/img/home.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
