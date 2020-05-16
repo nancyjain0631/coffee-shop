@@ -4,12 +4,14 @@
 
 /* declaring variables */
 :root {
-    --brightyellow: #e38505;
+    --brightyellow: #ffd900;
     --darkbrown: #bb9457;
     --yellow: rgb(242, 180, 80);
     --brown: #382923;
     --grey: #a9b2ac;
     --black: #191919;
+    --whitish: #f3f4f7;
+    --light-gray: #52565e;
 
 }
 
@@ -45,12 +47,72 @@ body {
     position: relative;
 }
 
-@media screen and (max-width:768px) {
-    .header {
-        background: url('../assets/img/home.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+
+
+/* banner */
+.banner {
+    text-align: center;
+    z-index: 5;
+    top: 50%;
+    margin-top: 8rem;
+}
+
+.banner_title {
+    font-size: 7rem;
+    text-transform: capitalize;
+    color: var(--whitish);
+
+}
+
+
+.banner_social-icon {
+    display: block;
+    text-decoration: none;
+    color: var(--whitish);
+    border: 0.15rem solid var(--whitish);
+    border-radius: 50%;
+    padding: 0.25rem;
+    transition: all 0.5s linear;
+}
+
+.banner_social-icon:hover {
+    background: #c9510c;
+
+    color: var(--whitish);
+}
+
+.banner_icons {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
+    /* grid-template-columns: repeat(5, 3rem); */
+    grid-column-gap: 0.5rem;
+    justify-content: center;
+}
+
+
+/* video */
+.video_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video_item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* navBtn */
+.navBtn {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    font-size: 3.5rem;
+    color: var(--black);
 }
