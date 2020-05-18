@@ -142,7 +142,7 @@ body {
     width: 50%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
+    grid-template-columns: 4rem 4rem 4rem 4rem;
     /* grid-template-columns: repeat(5, 3rem); */
     grid-column-gap: 0.5rem;
     justify-content: center;
@@ -278,4 +278,107 @@ body {
     display: block;
     height: 100%;
     border-radius: 0.25rem;
+}
+
+/* drink section */
+.drink {
+    background: var(--brown);
+    color: var(--brightyellow);
+    text-transform: capitalize;
+}
+
+.drink-form,
+.drink-card {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    grid-row-gap: 1.25rem;
+}
+
+.drink-form_feedback {
+    border: 0.1rem solid var(--brightyellow);
+    padding: 0.25rem;
+    display: none;
+}
+
+/*start of special class for javascript */
+.error {
+    display: block;
+    color: red;
+    border-color: red;
+}
+
+.success {
+    display: block;
+    color: green;
+    border-color: green;
+}
+
+/* end of javascript class */
+.drink-form_title,
+.drink-card_title {
+    font-size: 3rem;
+}
+
+.input-name,
+.input-lastname,
+.input-email {
+    width: 100%;
+}
+
+.input-name,
+.input-lastname,
+.input-email,
+.input-submit {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(111, 87, 77, 0.6);
+    color: var(--darkbrown);
+    border: none;
+    outline: none;
+}
+
+.input-name::placeholder,
+.input-lastname::placeholder,
+.input-email::placeholder {
+    color: var(--darkbrown);
+    text-transform: capitalize;
+}
+
+.input-submit {
+    background: var(--yellow);
+    color: var(--black);
+    transition: all 0.5s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.input-submit:hover {
+    opacity: 0.8;
+}
+
+.drink-card_list {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 2rem;
+}
+
+.person {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    text-align: left;
+    grid-gap: 1rem;
+    border: 0.1rem solid rgba(111, 87, 77, 0.6);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+}
+
+.person_thumbnail {
+    border-radius: 25%;
+    height: 4rem;
+    width: 4rem;
 }
