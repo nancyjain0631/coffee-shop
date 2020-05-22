@@ -21,6 +21,13 @@
     padding: 0;
 }
 
+html,
+body {
+
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     height: 100%;
     font-family: 'Noto Sans', sans-serif;
@@ -55,6 +62,10 @@ body {
 
 }
 
+.section-title-left {
+    margin-left: 10rem;
+}
+
 .section-title_name {
     font-size: 3rem;
     text-transform: capitalize;
@@ -87,11 +98,16 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+
+
     background: #f5c037;
-    z-index: 99;
+    background-size: cover;
+    z-index: 999;
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+
+
 }
 
 /* header */
@@ -287,6 +303,11 @@ body {
     text-transform: capitalize;
 }
 
+.drink-container {
+    max-width: 80vw;
+    margin: 1rem auto;
+}
+
 .drink-form,
 .drink-card {
     text-align: center;
@@ -381,4 +402,127 @@ body {
     border-radius: 25%;
     height: 4rem;
     width: 4rem;
+}
+
+/* work section */
+.work-container {
+    max-width: 80vw;
+
+    margin: 1rem auto;
+}
+
+/* swiper class */
+
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+
+.swiper-slide-img {
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--black);
+    border-radius: 0.5rem;
+
+}
+
+
+
+.gallery-top {
+    height: 50%;
+    width: 100%;
+    padding: 0;
+}
+
+.swiper-slide-thumb {
+    border: 0.25rem solid var(--black);
+
+}
+
+
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+/* end of swiper class */
+/* contact section */
+.contact-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+.contact-info {
+    display: grid;
+    justify-content: center;
+
+}
+
+.contact-item {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.contact-item_icon {
+    font-size: 3rem;
+    color: var(--yellow);
+}
+
+.contact-item_title {
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    letter-spacing: 0.25rem;
+    font-style: italic;
+
+}
+
+.contact-item_text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: grey;
+
+}
+
+/* reference */
+.references {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.ref-title {
+    text-transform: capitalize;
+    color: var(--brown);
+    margin-bottom: 1rem;
+}
+
+.ref-title span {
+    font-size: 2rem;
+    color: blue;
+}
+
+.ref-content a,
+.ref-content p {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
 }

@@ -2,8 +2,8 @@
 eventListeners();
 
 function eventListeners() {
-    const ui = new UI()
-    //preloader
+    const ui = new UI();
+    // preloader
     window.addEventListener('load', function () {
         ui.hidePreloader();
     })
@@ -129,3 +129,20 @@ function Customer(name, lastname, email) {
         this.lastname = lastname,
         this.email = email;
 }
+// work section
+// starting of swiper
+// var swiper = new Swiper('.swiper-container', {
+//     effect: 'cube',
+//     grabCursor: true,
+//     cubeEffect: {
+//         shadow: true,
+//         slideShadows: true,
+//         shadowOffset: 20,
+//         shadowScale: 0.94,
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+// });
+//   end of swiper
+// end of work section

@@ -48,6 +48,15 @@
         color: var(--yellow);
         font-size: 2rem;
     }
+
+    /* work section  */
+    .section-title-left {
+        margin-left: 3rem;
+    }
+
+    .section-title-name {
+        font-size: 2rem;
+    }
 }
 
 
@@ -79,97 +88,146 @@
         height: 3rem;
         width: 3rem;
     }
+}
 
-    @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
 
-        /* global start */
-        /* section */
-        .grid-container-medium-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            /*fraction*/
-            grid-column-gap: 4rem;
-        }
-
-        .grid-container {
-            max-width: 75vw;
-        }
-
-        /* end of global */
-        .video_switch-container {
-            display: block;
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            z-index: 5;
-        }
-
-        .video_switch {
-            position: relative;
-            width: 5rem;
-            background: var(--yellow);
-            text-transform: uppercase;
-            display: flex;
-            justify-content: space-between;
-            padding: 0.25rem;
-            cursor: pointer;
-            border-radius: 0.5rem;
-        }
-
-        .video_switch-btn {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 50%;
-            background: var(--brown);
-            border-radius: 0.5rem;
-            transition: all 0.2s ease-out;
-        }
-
-        /* special class for javascipt */
-
-        .btnSlide {
-            left: 50%;
-        }
-
-        /* about */
-        .about-img-special {
-            order: -1;
-        }
-
-        .about-container {
-            grid-template-rows: 1fr 1fr;
-        }
-
-        /* drink */
-        .drink-card_list {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 1rem;
-        }
+    /* global start */
+    /* section */
+    .grid-container-medium-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*fraction*/
+        grid-column-gap: 4rem;
     }
 
-
-    @media screen and (min-width:2560px) {
-        .banner_title {
-            font-size: 12rem;
-            padding-bottom: 2rem;
-
-        }
-
-        .banner_icons {
-            padding-top: 3rem;
-            grid-template-columns: repeat(5, 7rem);
-            grid-column-gap: 0.5rem;
-        }
-
-        .banner_social-icon .fa-2x {
-            font-size: 4rem;
-        }
-
-        .banner_social-icon {
-            border: 0.25rem solid var(--whitish);
-        }
+    .grid-container {
+        max-width: 75vw;
     }
+
+    /* end of global */
+    .video_switch-container {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        z-index: 5;
+    }
+
+    .video_switch {
+        position: relative;
+        width: 5rem;
+        background: var(--yellow);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+
+    .video_switch-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background: var(--brown);
+        border-radius: 0.5rem;
+        transition: all 0.2s ease-out;
+    }
+
+    /* special class for javascipt */
+
+    .btnSlide {
+        left: 50%;
+    }
+
+    /* about */
+    .about-img-special {
+        order: -1;
+    }
+
+    .about-container {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* drink */
+    .drink-card_list {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    /* contact */
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr);
+        order: -1;
+        /* order=-1 is used to flip the map above the map by default order is 0 */
+    }
+}
+
+@media screen and (min-width:992px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 1rem;
+    }
+
+    .contact-map {
+        align-self: center;
+    }
+
+    .contact-item {
+        margin: 0.25rem;
+        padding: 0.25rem;
+    }
+
+    .contact-item_icon {
+        font-size: 2rem;
+
+    }
+
+    .contact-item_title {
+
+        margin: 0.25rem 0;
+        letter-spacing: 0.15rem;
+
+
+    }
+
+    .contact-item_text {
+        font-size: 0.85rem;
+
+
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .banner_title {
+        font-size: 12rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .banner_icons {
+        padding-top: 3rem;
+        grid-template-columns: repeat(5, 7rem);
+        grid-column-gap: 0.5rem;
+    }
+
+    .banner_social-icon .fa-2x {
+        font-size: 4rem;
+    }
+
+    .banner_social-icon {
+        border: 0.25rem solid var(--whitish);
+    }
+}
 
 }
