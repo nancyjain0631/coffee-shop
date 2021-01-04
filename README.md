@@ -1,4 +1,4 @@
-# Coffee Shop Website
+# Coffee Junkie
 This Website is live here: https://nancyjain0631.github.io/coffee-shop-nancy/
 
 This is a simple coffee shop website.
